@@ -1,0 +1,194 @@
+🔐 HOW TO ADD YOUR OWN CREDENTIALS & IPs TO LOGINS.TXT
+═════════════════════════════════════════════════════════════
+
+FILE FORMAT:
+────────────────────────────────────────────────────────────
+YYYY-MM-DD HH:MM:SS,IP_ADDRESS,USERNAME,PASSWORD
+
+Example:
+2026-05-11 10:20:00,104.22.0.1,ravi,ravi@123
+
+
+📋 UNDERSTANDING THE DATA
+────────────────────────────────────────────────────────────
+
+✅ LEGITIMATE LOGINS (successful attempts):
+   - Use password: 1234 (this is the ONLY correct password in the system)
+   - Example: 2026-05-11 08:15:00,192.168.1.100,admin,1234
+   - Result: ✅ SUCCESS (counted as valid attempt)
+
+❌ FAILED LOGINS (brute-force attempts):
+   - Use ANY password EXCEPT 1234
+   - Example: 2026-05-11 08:00:01,192.168.1.10,admin,wrong
+   - Result: ❌ FAILURE (counted as suspicious)
+
+⚠️  HIGH RISK PATTERN (Brute-force detection):
+   - Same IP, multiple wrong passwords in short time
+   - Example: 5+ failed attempts from one IP = BLOCKED
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXAMPLES: ADDING YOUR OWN DATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SCENARIO 1: Add yourself with custom credentials
+─────────────────────────────────────────────────
+
+Your Details:
+- IP Address: 192.168.100.50 (your local/office IP)
+- Username: ravii (your username)
+- Password: MySecure@2024 (your password)
+
+Add these lines to logins.txt:
+
+2026-05-11 11:00:00,192.168.100.50,ravii,MySecure@2024
+2026-05-11 11:00:05,192.168.100.50,ravii,MySecure@2024
+
+Result: ✅ Your IP will show as LEGITIMATE (success)
+        ✅ ALLOWED (not flagged as suspicious)
+
+
+SCENARIO 2: Simulate failed login attempts from your IP
+────────────────────────────────────────────────────────
+
+Your Details:
+- IP Address: 192.168.100.50 (your IP)
+- Username: ravii (your username)
+
+Add these lines to show FAILED attempts:
+
+2026-05-11 11:30:00,192.168.100.50,ravii,wrongpassword
+2026-05-11 11:30:02,192.168.100.50,ravii,incorrect
+2026-05-11 11:30:04,192.168.100.50,ravii,badpass
+
+Result: ⚠️  Your IP will show as MEDIUM RISK
+        ⚠️  3 failed attempts from your IP
+
+
+SCENARIO 3: Simulate brute-force from your IP (6+ failures)
+──────────────────────────────────────────────────────────
+
+Your Details:
+- IP Address: 192.168.100.50 (your IP)
+
+Add these lines to trigger AUTO-BLOCK:
+
+2026-05-11 12:00:00,192.168.100.50,ravii,try1
+2026-05-11 12:00:02,192.168.100.50,ravii,try2
+2026-05-11 12:00:04,192.168.100.50,ravii,try3
+2026-05-11 12:00:06,192.168.100.50,ravii,try4
+2026-05-11 12:00:08,192.168.100.50,ravii,try5
+2026-05-11 12:00:10,192.168.100.50,ravii,try6
+
+Result: 🚫 Your IP will show CRITICAL RISK (80+/100)
+        🚫 AUTO-BLOCKED (blocked immediately)
+
+
+SCENARIO 4: Add yourself to WHITELIST (always trusted)
+──────────────────────────────────────────────────────
+
+In the GUI Application:
+1. Click the "🛡️ Whitelist/Blacklist" tab
+2. Under "✅ Whitelisted IPs" section
+3. Enter your IP: 192.168.100.50
+4. Click "➕ Add IP"
+
+Effect: ✅ Your IP will ALWAYS be ALLOWED
+        ✅ Even if you have 20 failed attempts, you won't be blocked
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CURRENT DATA IN FILE (50+ IPs)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ LEGITIMATE (Success attempts with 1234):
+   - 192.168.1.100, admin (1 successful)
+   - 192.168.1.105, admin (1 successful)
+   - 192.168.50.50, admin (1 successful)
+   - 10.0.0.50, john (2 successful)
+   - 198.51.100.22, alice (1 success, 2 failures)
+   - 151.101.0.140, bobsmith (2 successful)
+   - 118.0.0.1, normaluser (2 successful)
+   - 85.25.149.66, user123 (2 successful)
+   - 195.154.0.143, sarah (2 successful)
+   - 176.31.96.198, emma (2 successful)
+   - 89.200.241.37, david (2 successful)
+   - 212.71.235.87, lisa (2 successful)
+   - 104.22.0.1, ravi (2 successful) ← EXAMPLE WITH YOUR NAME!
+   - 2001:db8::1, testuser (2 successful)
+
+🔴 BRUTE-FORCE/SUSPICIOUS (Multiple failures):
+   - 192.168.1.10 (6 failures) - AUTO-BLOCKED
+   - 203.0.113.45, hacker (5 failures) - HIGH RISK
+   - 210.0.0.1 (4 failures) - MEDIUM RISK
+   - 141.98.0.88, guest (6 failures) - AUTO-BLOCKED
+   - 45.33.32.156, attacker1 (6 failures) - AUTO-BLOCKED
+   - 80.82.70.76, mike (5 failures, 1 success) - HIGH RISK
+   - 46.183.108.90, suspect (5 failures) - HIGH RISK
+   - 78.110.227.197, malicious (5 failures) - AUTO-BLOCKED
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP-BY-STEP: ADD YOUR DATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. FIND YOUR IP ADDRESS
+   ─────────────────────
+   On Windows:
+   - Open Command Prompt
+   - Type: ipconfig
+   - Look for "IPv4 Address" (e.g., 192.168.1.xxx)
+
+   Or online: https://www.whatismyipaddress.com
+
+2. EDIT logins.txt FILE
+   ──────────────────────
+   Option A: Open in VS Code
+   - Right-click logins.txt → Open with Code
+   - Scroll to the bottom
+   - Add your entries
+   - Save (Ctrl+S)
+
+   Option B: Open in Notepad
+   - Right-click logins.txt → Edit with Notepad
+   - Scroll to the bottom
+   - Add your entries
+   - Save (Ctrl+S)
+
+3. FORMAT YOUR ENTRIES
+   ───────────────────
+   For SUCCESSFUL login (username: ravii, your IP: 192.168.1.x):
+   2026-05-11 11:00:00,192.168.1.x,ravii,1234
+   2026-05-11 11:00:05,192.168.1.x,ravii,1234
+
+   For FAILED login (brute-force simulation):
+   2026-05-11 11:30:00,192.168.1.x,ravii,wrongpass
+   2026-05-11 11:30:05,192.168.1.x,ravii,wrongpass
+
+4. TEST IN GUI
+   ──────────
+   - Run: java SecurityLogAnalyzerGUI
+   - Click "📂 Load Logs File"
+   - Select logins.txt
+   - Click "🔍 Analyze Logs"
+   - See your IP analyzed!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TIPS & TRICKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 Use realistic timestamps (incrementing by 1-5 seconds)
+💡 Mix successful and failed attempts for realistic patterns
+💡 Use 1234 ONLY for legitimate successful logins
+💡 Add different usernames to see per-user risk analysis
+💡 Whitelist your IP in the GUI to always be trusted
+💡 Test with different failure rates (3, 5, 10 failures)
+
+Default valid credentials (in the system):
+├─ Username: admin
+├─ Password: 1234
+└─ Any other username/password = FAILURE
+
+
+Need help? Just run the analyzer and check the detailed report! 🚀

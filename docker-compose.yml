@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  security-analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: security-log-analyzer
+    
+    # For GUI on Windows with WSL2
+    environment:
+      - DISPLAY=${DISPLAY:-host.docker.internal:0}
+    
+    # Volume mounts for data persistence
+    volumes:
+      - ./logins.txt:/app/logins.txt
+      - ./security_report.txt:/app/security_report.txt
+      - ./blocked_ips.txt:/app/blocked_ips.txt
+      - ./data:/app/data  # For custom data files
+      
+      # For X11 forwarding on Linux
+      # - /tmp/.X11-unix:/tmp/.X11-unix
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    
+    # Keep container running (for interactive use)
+    stdin_open: true
+    tty: true
+    
+    # Restart policy
+    restart: unless-stopped
+
+  # Optional: Service for running CLI analyzer in headless mode
+  analyzer-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: security-analyzer-cli
+    
+    # Override the GUI entrypoint with CLI
+    entrypoint: java
+    command: 
+      - "-cp"
+      - "security-log-analyzer-2.0.0.jar"
+      - "com.soc.analyzer.LogAnalyzer"
+    
+    volumes:
+      - ./logins.txt:/app/logins.txt
+      - ./security_report.txt:/app/security_report.txt
+      - ./blocked_ips.txt:/app/blocked_ips.txt
+    
+    restart: "no"

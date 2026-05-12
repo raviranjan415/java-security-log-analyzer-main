@@ -1,0 +1,333 @@
+???????????????????????????????????????????????????????????????????????????????
+                   ADVANCED SECURITY LOG ANALYSIS REPORT
+???????????????????????????????????????????????????????????????????????????????
+
+?? IP ADDRESS ANALYSIS ??????????????????????????????????????????????????????
+
+IP: 151.101.0.140
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 210.0.0.1
+?? Total Attempts:      4 (Success: 0, Failed: 4)
+?? Failure Rate:        100.0%
+?? Risk Score:          80/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 85.25.149.66
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 192.168.1.105
+?? Total Attempts:      1 (Success: 1, Failed: 0)
+?? Failure Rate:        0.0%
+?? Risk Score:          0/100 [? LOW]
+?? Status:              ? ALLOWED (Whitelisted)
+?? Whitelist Status:    ? TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 198.51.100.22
+?? Total Attempts:      3 (Success: 0, Failed: 3)
+?? Failure Rate:        100.0%
+?? Risk Score:          75/100 [? HIGH]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 192.168.1.100
+?? Total Attempts:      1 (Success: 1, Failed: 0)
+?? Failure Rate:        0.0%
+?? Risk Score:          0/100 [? LOW]
+?? Status:              ? ALLOWED (Whitelisted)
+?? Whitelist Status:    ? TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 212.71.235.87
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 172.16.0.2
+?? Total Attempts:      4 (Success: 0, Failed: 4)
+?? Failure Rate:        100.0%
+?? Risk Score:          80/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 78.110.227.197
+?? Total Attempts:      5 (Success: 0, Failed: 5)
+?? Failure Rate:        100.0%
+?? Risk Score:          95/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 176.31.96.198
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 10.0.0.50
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 46.183.108.90
+?? Total Attempts:      5 (Success: 0, Failed: 5)
+?? Failure Rate:        100.0%
+?? Risk Score:          95/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 192.168.1.10
+?? Total Attempts:      6 (Success: 0, Failed: 6)
+?? Failure Rate:        100.0%
+?? Risk Score:          100/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 195.154.0.143
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 203.0.113.45
+?? Total Attempts:      6 (Success: 0, Failed: 6)
+?? Failure Rate:        100.0%
+?? Risk Score:          100/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 89.200.241.37
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 118.0.0.1
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 80.82.70.76
+?? Total Attempts:      5 (Success: 0, Failed: 5)
+?? Failure Rate:        100.0%
+?? Risk Score:          95/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 104.22.0.1
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 2001:db8::1
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Failure Rate:        100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 192.168.50.50
+?? Total Attempts:      3 (Success: 1, Failed: 2)
+?? Failure Rate:        66.7%
+?? Risk Score:          36/100 [? LOW]
+?? Status:              ? ALLOWED
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 141.98.0.88
+?? Total Attempts:      6 (Success: 0, Failed: 6)
+?? Failure Rate:        100.0%
+?? Risk Score:          100/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+IP: 45.33.32.156
+?? Total Attempts:      6 (Success: 0, Failed: 6)
+?? Failure Rate:        100.0%
+?? Risk Score:          100/100 [? CRITICAL]
+?? Status:              ? BLOCKED (Critical Risk)
+?? Whitelist Status:    ? NOT TRUSTED
+?? Blacklist Status:    ? ALLOWED
+
+?? USER ACCOUNT ANALYSIS ?????????????????????????????????????????????????????
+
+User: normaluser
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: mike
+?? Total Attempts:      5 (Success: 0, Failed: 5)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          95/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: bobsmith
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: attacker1
+?? Total Attempts:      6 (Success: 0, Failed: 6)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          100/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: admin
+?? Total Attempts:      15 (Success: 3, Failed: 12)
+?? Account Compromise Risk: 80.0%
+?? Risk Score:          92/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: alice
+?? Total Attempts:      3 (Success: 0, Failed: 3)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          75/100 [? HIGH]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: sarah
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: testuser
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: suspect
+?? Total Attempts:      5 (Success: 0, Failed: 5)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          95/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: unknown
+?? Total Attempts:      4 (Success: 0, Failed: 4)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          80/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: malicious
+?? Total Attempts:      5 (Success: 0, Failed: 5)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          95/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: hacker
+?? Total Attempts:      6 (Success: 0, Failed: 6)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          100/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: emma
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: ravi
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: lisa
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: john
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: guest
+?? Total Attempts:      6 (Success: 0, Failed: 6)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          100/100 [? CRITICAL]
+?? Recommendation:      ? ACCOUNT LOCKED (Critical Risk)
+
+User: david
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+User: user123
+?? Total Attempts:      2 (Success: 0, Failed: 2)
+?? Account Compromise Risk: 100.0%
+?? Risk Score:          50/100 [? MEDIUM]
+?? Recommendation:      ??  MONITOR (Medium Risk)
+
+?? RECOMMENDED ACTIONS ???????????????????????????????????????????????????????
+
+? CRITICAL ACTIONS REQUIRED:
+   • Block IP 210.0.0.1 immediately (risk: 80/100)
+   • Block IP 198.51.100.22 immediately (risk: 75/100)
+   • Block IP 172.16.0.2 immediately (risk: 80/100)
+   • Block IP 78.110.227.197 immediately (risk: 95/100)
+   • Block IP 46.183.108.90 immediately (risk: 95/100)
+   • Block IP 192.168.1.10 immediately (risk: 100/100)
+   • Block IP 203.0.113.45 immediately (risk: 100/100)
+   • Block IP 80.82.70.76 immediately (risk: 95/100)
+   • Block IP 141.98.0.88 immediately (risk: 100/100)
+   • Block IP 45.33.32.156 immediately (risk: 100/100)
+
+? RECOMMENDED MONITORING:
+   • No high-risk IPs detected
+
+? USER ACCOUNT ACTIONS:
+   • Reset password for 'mike' (failures: 5)
+   • Reset password for 'attacker1' (failures: 6)
+   • Reset password for 'admin' (failures: 12)
+   • Reset password for 'alice' (failures: 3)
+   • Reset password for 'suspect' (failures: 5)
+   • Reset password for 'unknown' (failures: 4)
+   • Reset password for 'malicious' (failures: 5)
+   • Reset password for 'hacker' (failures: 6)
+   • Reset password for 'guest' (failures: 6)
