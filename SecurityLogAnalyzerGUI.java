@@ -665,3 +665,5 @@ public class SecurityLogAnalyzerGUI extends JFrame {
         SwingUtilities.invokeLater(() -> new SecurityLogAnalyzerGUI());
     }
 }
+
+
