@@ -24,7 +24,7 @@ public class LoginChecker {
                 System.out.println("Access Denied");
 
                 if (attempts == maxAttempts) {
-                    System.out.println("🚨 ALERT: Possible Brute-Force Attack Detected!");
+                    System.out.println("🚨 ALERT: Possible Brute-Force Attack Detected!"); 
                 } else {
                     System.out.println("Attempts left: " + (maxAttempts - attempts));
                 }
