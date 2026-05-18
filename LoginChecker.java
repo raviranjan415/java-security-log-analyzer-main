@@ -31,6 +31,6 @@ public class LoginChecker {
             }
         }
 
-        input.close(); 
+        input.close();  
     }
 }
