@@ -12,7 +12,7 @@ public class LogAnalyzer {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
         try {
-            File file = new File("logins.txt");
+            File file = new File("logins.txt"); 
             Scanner reader = new Scanner(file);
 
             while (reader.hasNextLine()) {
